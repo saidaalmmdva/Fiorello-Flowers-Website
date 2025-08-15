@@ -1,0 +1,419 @@
+.header {
+  background: #fff;
+  .container {
+    background-color: #fff;
+    padding: 20px 0;
+
+    .navbar {
+      display: flex;
+
+      .fiorello-logo img {
+        max-width: 100%;
+        height: 28px;
+      }
+
+      .nav-link {
+        color: #333;
+        font-weight: 600px;
+        margin-right: 40px;
+        
+      }
+
+      .dropdown-menu {
+        border: none;
+        border-radius: 0;
+        padding: 10px 0;
+        position: absolute;
+        left: 0;
+        top: 60%;
+
+        .dropdown-item {
+          color: #333333b4;
+          padding: 10px 30px;
+
+          &:hover {
+            text-decoration: underline;
+        
+          }
+   
+        }
+      }
+
+      .nav-item:hover .dropdown-menu {
+        display: block;
+      }
+    }
+    .header-item {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+
+   
+      .header-icon i {
+        font-size: 20px;
+        margin-right: 35px;
+      }
+
+      .header-text {
+        font-size: 14px;
+        color: #333;
+      }
+    }
+
+  }
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    .navbar {
+      .nav-link {
+        text-align: left;
+        padding: 10px 0;
+      }
+
+      .dropdown-menu {
+        position: static;
+        border: none;
+        box-shadow: none;
+        
+      }
+    }
+  }
+}
+
+
+.about-us-section {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  
+    .overlay {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      .content {
+        text-align: center;
+        h2 {
+          font-family: $font-family-playfair-display;
+          font-size: 50px;
+          color: black;
+          margin-bottom: 20px;
+        }
+  
+       p {
+        font-family: $font-family-lora;
+        font-size: 18px;
+        color: #6d6a6a;
+       }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .content {
+        h2 {
+          font-size: 26px;
+        }
+  
+    p {
+
+        font-size: 16px;
+        
+    }
+      }
+    }
+  }
+
+
+  .flowers-section {
+    background-color: white; 
+    padding: 60px 0; 
+    
+    .container {
+      max-width: 1320px;
+      margin: 0 auto;
+      
+      .row {
+      
+        .flowers-content {
+            font-family: $font-family-playfair-display;
+            text-align: left;
+            max-width: 100%; 
+            padding: 0 40px;
+          
+            .flowers-title {
+            
+                font-size: 2.5rem;
+                color: #333;
+                margin-bottom: 20px;
+                
+                span {
+    
+                    color: rgba(255, 0, 0, 0.644);
+                }
+            }
+            
+            .flowers-description {
+                margin: 30px auto;
+                font-size: 1.2rem;
+                color: #666;
+            
+            }
+    
+            
+            }
+            
+            .flowers-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        
+        }
+    }
+  
+
+    @media (max-width: 767px) {
+      .flowers-title {
+        font-size: 2rem;
+      }
+  
+      .flowers-description {
+        font-size: 1rem;
+      }
+    }
+  }
+ 
+
+  .flower-experts-section {
+    background-color: rgba(128, 128, 128, 0.068); 
+    padding: 80px;
+    
+    .container {
+    
+        .expert-section-content {
+    
+            h2 {
+                font-family: $font-family-playfair-display;
+                font-size: 38px;
+                margin-bottom: 30px;
+            }
+            
+            p {
+                color: gray;
+                font-family: $font-family-raleway;
+                font-size: 18px;
+                margin: 0 auto 50px;
+            }
+    
+        }
+        
+        .card {
+                border: none;
+                background-color: transparent;
+            .card-img {
+                width: 220px;
+                height: auto;
+                object-fit: cover;
+                margin: 30px auto 15px;
+                border-radius: 50%;
+            }
+            .card-content {
+                text-align: center;
+                
+                h3 {
+    
+                font-family: $font-family-playfair-display;
+                font-size: 18px;
+           
+        }
+        
+                p {
+                font-family: $font-family-raleway;
+                color: rgba(128, 128, 128, 0.911);
+                font-size: 13px;
+                margin: 10px 0 0;
+        }
+    }
+    }
+        
+        @media (max-width: 767px) {
+        
+            h2 {
+                font-size: 28px;
+            }
+        
+            p {
+                font-size: 16px;
+            }
+        
+        }
+    
+    
+    }
+    
+    }
+
+  .profiles-section {
+    background-color: white;
+    padding: 100px 0 !important;
+    .profiles-swiper {
+      .swiper-slide {
+        .profiles-slide {
+          .profiles-image {
+            width: 90px;
+            height: 90px;
+            overflow: hidden;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+  
+          .profiles-description {
+            color: rgba(0, 0, 0, 0.692);
+            font-size: 1.5rem;
+            font-family: $font-family-lora;
+          }
+
+          .profiles-content {
+            font-family: $font-family-montserrat;
+            h3 {
+              font-size: 0.8rem;
+              margin-bottom: 0.8rem;
+            }
+            p {
+              font-size: 0.8rem;
+              color: #88919b;
+            }
+          }
+        }
+      }
+  
+    
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #adb5bd;
+        transition: all 0.3s;
+        &:hover {
+          color: rgba(0, 0, 0, 0.767);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .profiles-slide {
+      .profiles-image {
+        width: 70px;
+        height: 70px;
+      }
+      .profiles-description {
+        font-size: 1rem !important;
+      }
+      .profiles-content {
+        h3 {
+          font-size: 0.9rem !important;
+        }
+        p {
+          font-size: 0.8rem !important;
+        }
+      }
+    }
+  }
+
+
+    .footer-section {
+      background-color: rgba(255, 192, 203, 0.178);
+      padding: 60px 0;
+      color: #333;
+    
+      .container {
+        .row {
+          .col {
+            font-family: $font-family-montserrat;
+            h4 {
+                
+              font-size: 13px;
+              color: #333;
+              margin-top: 30px;
+              margin-bottom: 20px;
+            }
+    
+            .contact-list {
+              list-style: none;
+              padding: 0;
+              margin: 0;
+    
+              li {
+                font-size: 12px;
+                margin-bottom: 10px;
+                color: #666;
+    
+                a {
+                  color: #666;
+                  text-decoration: none;
+    
+                  &:hover {
+                    color: #ff6f61;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    
+      .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+        font-family: $font-family-montserrat;
+        font-size: 14px;
+        color: black;
+        .span {
+    
+            color: rgba(0, 0, 0, 0.568);
+        }
+    
+        .social-media {
+        display: flex;
+        gap: 25px;
+        margin-left: 15px;
+        
+        }
+      }
+
+      @media (max-width: 768px) {
+   
+    
+        .footer-bottom {
+          font-size: 12px;
+        }
+    
+        .col-md-3 {
+          margin-bottom: 20px;
+        }
+    
+        h4 {
+          font-size: 8px;
+        }
+    
+        .contact-list li {
+          font-size: 6px;
+        }
+      }
+    }
+

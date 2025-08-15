@@ -1,0 +1,83 @@
+.footer-section {
+    background-color: rgba(255, 192, 203, 0.178);
+    padding: 60px 0;
+    color: #333;
+
+  .container {
+    .row {
+      .col {
+        font-family: $font-family-montserrat;
+        h4 {
+          
+          font-size: 13px !important;
+          color: #333;
+          margin-top: 30px;
+          margin-bottom: 20px;
+        }
+
+        .contact-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          
+          li {
+            font-size: 12px;
+            margin-bottom: 10px;
+            color: #666;
+
+            a {
+              color: #666;
+              text-decoration: none;
+
+              &:hover {
+                color: #ff6f61;
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    font-family: $font-family-montserrat;
+    font-size: 14px;
+    color: black;
+    span {
+
+        color: rgba(0, 0, 0, 0.568);
+    }
+
+    .social-media {
+    display: flex;
+    gap: 25px;
+    margin-left: 15px;
+    
+    }
+  }
+
+  @media (max-width: 768px) {
+  
+    .footer-bottom {
+      font-size: 12px;
+    }
+
+    .col {
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      font-size: 8px;
+    }
+
+    .contact-list li {
+      font-size: 6px;
+    }
+  }
+}

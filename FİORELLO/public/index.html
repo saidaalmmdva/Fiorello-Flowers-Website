@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Fiorello - A Flowers Shop and Florist</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../src/scss/style.css"/>
+  </head>
+  <body>
+   <header class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="fiorello-logo">
+          <img src="./images/logo.png" alt="Fiorello Logo"/>
+        </div>
+
+        <button
+          class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="menu collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggler" href="https://fiorello.qodeinteractive.com/" role="button">HOME</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Main Home</a></li>
+                <li><a class="dropdown-item" href="#">Grid Home</a></li>
+                <li><a class="dropdown-item" href="#">Flower Shop</a></li>
+                <li><a class="dropdown-item" href="#">Animated Slider</a></li>
+                <li><a class="dropdown-item" href="#">Metro Showcase</a></li>
+                <li><a class="dropdown-item" href="#">Carousel Showcase</a></li>
+                <li><a class="dropdown-item" href="#">Landing</a></li>
+              </ul>
+            </li>
+  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggler" href="#" role="button">PAGES</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="http://127.0.0.1:5500/F%C4%B0ORELLO/public/about.html">About Us</a></li>
+                <li><a class="dropdown-item" href="#">FAG Page</a></li>
+                <li><a class="dropdown-item" href="http://127.0.0.1:5500/F%C4%B0ORELLO/public/contact.html">Contact Us</a></li>
+              </ul>
+            </li>
+
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggler" href="#" role="button">SHOP</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Product Types</a></li>
+                <li><a class="dropdown-item" href="#">Standard Product</a></li>
+                <li><a class="dropdown-item" href="#">Grouped Product</a></li>
+                <li><a class="dropdown-item" href="#">Variable Product</a></li>
+                <li><a class="dropdown-item" href="#">Virtual Product</a></li>
+                <li><a class="dropdown-item" href="#">External Product</a></li>
+                <li><a class="dropdown-item" href="#">Downloadable Product</a></li>
+                <li><a class="dropdown-item" href="#">On Sale Product</a></li>
+                <li><a class="dropdown-item" href="#">Out Of Stock Product</a></li>
+                <li><a class="dropdown-item" href="#">New Product</a></li>
+              </ul>
+            </li>
+  
+        
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggler" href="#" role="button">PORTFOLIO<a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Standard</a></li>
+                <li><a class="dropdown-item" href="#">Gallery</a></li>
+                <li><a class="dropdown-item" href="#">Masonry</a></li>
+                <li><a class="dropdown-item" href="#">Portfolio Layouts</a></li>
+                <li><a class="dropdown-item" href="#">Portfolio Single</a></li>
+              </ul>
+            </li>
+  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggler" href="#" role="button">BLOG</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Masonry</a></li>
+                <li><a class="dropdown-item" href="#">Standard</a></li>
+                <li><a class="dropdown-item" href="#">Post Types</a></li>
+              </ul>
+            </li>
+  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggler" href="#" role="button">ELEMENTS</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Classic</a></li>
+                <li><a class="dropdown-item" href="#">Infographic</a></li>
+                <li><a class="dropdown-item" href="#">Interactive</a></li>
+                <li><a class="dropdown-item" href="#">Typography</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="header-item">
+          <div class="header-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="cart">CART ($0)</div>
+    
+        </div>
+      </nav>
+    </div>
+
+   </header>
+
+
+<main>
+  <!-- <div class="loader-container">
+    <span class="loader"></span>
+</div> -->
+
+<section class="intro-section">
+  <div class="container">
+      <div class="content-text">
+        <h1>Send <span>flowers</span> like <br> you mean it.</h1>
+        <p>Where flowers are our inspiration to create lasting memories. <br> Whatever the occasion, our flowers will make it special cursus <br> a sit amet mauris.</p>
+        <div class="signature-image">
+          <img src="./images/sara-signature.png" alt="Sara Signature">
+        </div>
+    </div>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/tulip.jpg" alt="Tulip">
+              </div>
+            <div class="swiper-slide">
+                <img src="./images/cactus.jpg" alt="Cactus">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/pinkgoldrose.jpg" alt="Pink Gold Rose">
+            </div>
+          </div>
+      
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    
+</section>
+
+<section class="category-section">
+
+  <div class="container">
+
+    <ul class="menu d-flex">
+        <li><a href="#"><span>ALL</span></a></li>
+        <li><a href="#">CACTUSES</a></li>
+        <li><a href="#">EXOTIC</a></li>
+        <li><a href="#">GREENS</a></li>
+        <li><a href="#">POPULAR</a></li>
+        <li><a href="#">VARIOUS</a></li>
+        <li><a href="#">WINTER</a></li>
+    </ul>
+  
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-md-3 col-lg-3">
+      <div class="card">
+        <img src="./images/majesty-palm.jpg" alt="Majesty Palm">
+        <h3>MAJESTY PALM</h3>
+        <div class="dynamic-text">
+          <span class="price-text">$259</span>
+          <span class="next-text">Add to cart</span>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3 col-lg-3">
+      <div class="card">
+        <img src="./images/foxglove-flower.jpg" alt="Foxglove Flower">
+        <h3>FOXGLOVE FLOWER</h3>
+        <div class="dynamic-text">
+          <span class="price-text">$259</span>
+          <span class="next-text">Add to cart</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3 col-lg-3">
+      <div class="card">
+        <img src="./images/sweet-alyssum.jpg" alt="Sweet Alyssum">
+        <span class="sold">Sold</span>
+        <h3>SWEET ALYSSUM</h3>
+        <div class="dynamic-text">
+          <span class="price-text">$259</span>
+          <span class="next-text">Read more</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3 col-lg-3">
+      <div class="card">
+        <img src="./images/spring-snowflake.jpg" alt="Spring Snowflake">
+        <h3>SPRING SNOWFLAKE</h3>
+        <div class="dynamic-text">
+          <span class="price-text">$170</span>
+          <span class="next-text">Add to cart</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3 col-lg-3">
+      <div class="card">
+        <img src="./images/scarlet-sage.jpg" alt="Scarlet Sage">
+        <span class="sale">Sale</span>
+        <h3>SCARLET SAGE</h3>
+        <div class="dynamic-text">
+          <span class="price-text"><span>$259</span> $159</span>
+          <span class="next-text">Add to cart</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3 col-lg-3">
+      <div class="card">
+        <img src="./images/rock-soapwort.jpg" alt="Rock Soapwort">
+        <h3>ROCK SOAPWORT</h3>
+        <div class="dynamic-text">
+          <span class="price-text">$259</span>
+          <span class="next-text">View products</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3 col-lg-3">
+      <div class="card">
+        <img src="./images/summer-savory.jpg" alt="Summer Savory">
+        <h3>SUMMER SAVORY</h3>
+        <div class="dynamic-text">
+          <span class="price-text">$259</span>
+          <span class="next-text">Add to cart</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3 col-lg-3">
+      <div class="card">
+        <img src="./images/wild-roses.jpg" alt="Wild Roses">
+        <h3>WILD ROSES</h3>
+        <div class="dynamic-text">
+          <span class="price-text">$259</span>
+          <span class="next-text">Buy on Amazon</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section class="valentine-section">
+  <div class="container">
+    <div class="row g-5">
+        <div class="col-md-12 col-lg-6 order-2">
+          <div class="valentine-content">
+            <h2 class="valentine-title">Suprise Your <span>Valentine!</span> <br> Let us arrange a smile.</h2>
+            <p class="valentine-description">Where flowers are our inspiration to create lasting memories. <br> Whatever the occasion...</p>
+            <ul class="valentine-list">
+              <li>Hand picked just for you.</li>
+              <li>Unique flower arrangements.</li>
+              <li>Best way to say you care.</li>
+            </ul>
+          </div>
+        </div>
+      <div class="col-md-12 col-lg-6 order-1">
+        <img src="./images/video-img.jpg" alt="Valentine" class="valentine-img img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="experts-section">
+
+  <div class="container">
+    <div class="expert-section-content">
+      <h2 class="text-center">Flower Experts</h2>
+      <p class="text-center">A perfect blend of creativity, energy, communication, happiness and love. <br> Let us arrange a smile for you.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+            <div class="card">
+                <img src="./images/crystal-brooks.png" class="card-img" alt="Crystal Brooks">
+                <div class="card-content">
+                    <h3>Crystal Brooks</h3>
+                    <p>Florist</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+            <div class="card">
+                <img src="./images/shirley-harris.png" class="card-img" alt="Shirley Harris">
+                <div class="card-content">
+                    <h3>Shirley Harris</h3>
+                    <p>Manager</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+            <div class="card">
+                <img src="./images/beverly-clark.png" class="card-img" alt="Beverly Clark">
+                <div class="card-content">
+                    <h3>Beverly Clark</h3>
+                    <p>Florist</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+            <div class="card">
+                <img src="./images/amanda-watkins.png" class="card-img" alt="Amanda Watkins">
+                <div class="card-content">
+                    <h3>Amanda Watkins</h3>
+                    <p>Florist</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<section class="subscribe-section" style="background-image: url('./images/girls.jpg');">
+  <div class="overlay">
+    <div class="content text-center">
+      <h2>Join The Colorful Bunch!</h2>
+      <form action="#" class="d-flex justify-content-center">
+        <input type="email" class="form" placeholder="Email Address"/>
+        <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<section class="blog-section py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">From Our Blog</h2>
+      <p class="section-description">A perfect blend of creativity, energy, communication, happiness and love. <br> Let us arrange a smile for you.</p>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="blog-card">
+          <img src="./images/flower-power.jpg" alt="Blog Post 1" class="img-fluid">
+          <div class="blog-card-body">
+            <span class="post-date">27.04.2018</span>
+            <h3 class="blog-title">Flower Power</h3>
+            <p class="blog-description">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="blog-card">
+          <img src="./images/local-florists.jpg" alt="Blog Post 2" class="img-fluid">
+          <div class="blog-card-body">
+            <span class="post-date">03.05.2018</span>
+            <h3 class="blog-title">Local Florists</h3>
+            <p class="blog-description">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="blog-card">
+          <img src="./images/flower-beauty.jpg" alt="Blog Post 3" class="img-fluid">
+          <div class="blog-card-body">
+            <span class="post-date">03.05.2018</span>
+            <h3 class="blog-title">Flower Beauty</h3>
+            <p class="blog-description">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="profiles-section py-5">
+  <div class="container">
+    <div class="swiper profiles-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="profiles-slide text-center">
+            <div class="profiles-image mx-auto">
+              <img src="./images/jasmine-white.png" alt="Profiles 1" class="img-fluid rounded-circle" />
+            </div>
+            <p class="profiles-description mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Aenean commodo ligula eget</p>
+            <div class="profiles-content mt-4">
+              <h3>JASMINE WHITE</h3>
+              <p>Florist</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="profiles-slide text-center">
+            <div class="profiles-image mx-auto">
+              <img src="./images/anna-barnes.png" alt="Profiles 2" class="img-fluid rounded-circle" />
+            </div>
+            <p class="profiles-description mt-3">Nullam dictum felis eu pede mollis pretium. <br> Integer tincidunt. Cras dapibus lingua<p>
+            <div class="profiles-content mt-4">
+              <h3>ANNA BARNES</h3>
+              <p>Florist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+</main>
+
+
+<footer class="footer-section">
+  <div class="container">
+    <div class="row">
+      <div class="col col-sm-6 col-md-3">
+        <h4>CUSTOMER SERVİCE</h4>
+        <ul class="contact-list">
+          <li><a href="#"><i></i></a>Help & Contact Us</li>
+          <li><a href="#"><i></i></a>Returns & Refunds</li>
+          <li><a href="#"><i></i></a>Online Stores</li>
+          <li><a href="#"><i></i></a>Terms & Conditions</li>
+        </ul>
+      </div>
+
+      <div class="col col-sm-6 col-md-3">
+        <h4>COMPANY</h4>
+        <ul class="contact-list">
+          <li><a href="#"><i></i></a>About Us</li>
+          <li><a href="#"><i></i></a>Blog</li>
+          <li><a href="#"><i></i></a>Order Tracking</li>
+          <li><a href="#"><i></i></a>FAQ Page</li>
+          <li><a href="#"><i></i></a>Contact Us</li>
+          <li><a href="#"><i></i></a>Login</li>
+        </ul>
+      </div>
+
+      
+      <div class="col col-sm-6 col-md-3">
+        <h4>SOCİAL MEDİA</h4>
+        <ul class="contact-list">
+          <li><a href="#"><i></i></a>Twitter</li>
+          <li><a href="#"><i></i></a>Instagram</li>
+          <li><a href="#"><i></i></a>Tumblr</li>
+          <li><a href="#"><i></i></a>Pinterest</li>
+        </ul>
+      </div>
+      <div class="col col-sm-6 col-md-3">
+        <h4>ARCHİVE</h4>
+        <ul class="contact-list">
+          <li><a href="#"><i></i></a>Designer Shoes</li>
+          <li><a href="#"><i></i></a>Gallery</li>
+          <li><a href="#"><i></i></a>Pricing</li>
+          <li><a href="#"><i></i></a>Feature Index</li>
+          <li><a href="#"><i></i></a>Login</li>
+          <li><a href="#"><i></i></a>Help & Support</li>
+        </ul>
+      </div>
+    </div>
+
+  
+    <div class="footer-bottom">
+      <p><span class="span">© 2018 </span>Qode Interactive, <a href="#"></a><span class="span">All Rights Reserved</span></p>
+      <div class="social-media">
+        <p><a href="#"></a><span class="span">INSTAGRAM</span></p>
+        <p><a href="#"></a><span class="span">FACEBOOK</span></p>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" onclick="scrollToTop()">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+
+<button id="flwBtn">
+
+  <i class="fas fa-leaf"></i>
+
+</button>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+     const swiper = new Swiper('.swiper', {
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+        delay: 3000,
+    },
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true,
+    },
+    speed: 1000,
+    slidesPerView: 1,
+});
+  </script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+
+const swiper = new Swiper('.profiles-swiper', {
+  slidesPerView: 1,
+  loop: false,
+  effect: 'slide',
+  speed: 500,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+</script>
+
+<script src="../src/javascript/app.js"></script>
+
+  </body>
+</html>
